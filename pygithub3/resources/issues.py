@@ -46,8 +46,6 @@ class Issue(Resource):
     def __str__(self):
         return '<Issue (%s)>' % getattr(self, 'number', '')
 
-    def pull_request(self):
-        return self._maps.get('pull_request')	
 
 class Comment(Resource):
 
